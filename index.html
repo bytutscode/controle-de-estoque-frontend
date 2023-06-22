@@ -1,191 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link type="stylesheet" href="./assets/css/styles.css">
-    <title>Estoque</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link type="stylesheet" href="./assets/css/styles.css">
+  <title>Estoque</title>
 </head>
+
 <body style="font-family: Arial;">
-<header>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" aria-label="Main navigation">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ESTOQUE</a>
-          <button class="navbar-toggler p-0 border-0" type="button" data-bs-target="#mobilemenu" data-bs-toggle="collapse" id="navbarSideCollapse" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="navbar-collapse collapse" id="mobilemenu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Histórico</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vendas</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ordem</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nova ordem</a></li>
-                  <li><a class="dropdown-item" href="#">Histórico</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Fornecedores</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Todos</a></li>
-                  <li><a class="dropdown-item" href="#">Adicionar</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="#">Todos os produtos</a></li>
-                  <li><a class="dropdown-item" href="#">Com minimo/sem estoque</a></li>
-                  <li><a class="dropdown-item" href="#">Repor</a></li>
-                  <li><a class="dropdown-item" href="#">Adicionar</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Usuários</a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="#">Todos os Usuários</a></li>
-                  <li><a class="dropdown-item" href="#">Adicionar</a></li>
-                </ul>
-              </li>
-              
+  <header>
+    <nav class="navbar navbar-expand-lg   navbar-dark bg-dark" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">ESTOQUE</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-target="#mobilemenu" data-bs-toggle="collapse"
+          id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="mobilemenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./historic.html">Histórico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sales.html">Vendas</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Fornecedores</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./suppliers.html">Todos</a></li>
+                <li><a class="dropdown-item" href="./supplier.html">Adicionar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
+              <ul class="dropdown-menu">
+
+                <li><a class="dropdown-item" href="./products.html">Todos os produtos</a></li>
+                <li><a class="dropdown-item" href="./outofsrock.html">Com minimo/sem estoque</a></li>
+                <li><a class="dropdown-item" href="./products.html">Repor</a></li>
+                <li><a class="dropdown-item" href="./product.html">Adicionar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuários</a>
+              <ul class="dropdown-menu">
+
+                <li><a class="dropdown-item" href="./users.html">Todos os Usuários</a></li>
+                <li><a class="dropdown-item" href="./signup.html">Adicionar</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form id="search" class="d-flex" role="search">
+            <input name="search" class="form-control shadow-none me-2" type="search" placeholder="Produto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Procurar</button>
+          </form>
+          <div class="nav-item dropdown text-light px-3">
+            <a class="nav-link dropdown-toggle" href="#" id="username" data-bs-toggle="dropdown" class=""
+              aria-expanded="false">userName</a>
+            <ul class="dropdown-menu">
+              <li><a id="logout" class="dropdown-item" href="#">Sair</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control shadow-none me-2" type="search" placeholder="Produto" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Procurar</button>
-            </form>
-            <div class="nav-item dropdown text-light px-3">
-                <a class="nav-link dropdown-toggle" href="#" id="username" data-bs-toggle="dropdown" class="" aria-expanded="false">userName</a>
-                <ul class="dropdown-menu">
-                  <li><a id="logout" class="dropdown-item" href="#">Sair</a></li>
-                </ul>
-            </div>
           </div>
         </div>
-      </nav>
-      
-</header>
+      </div>
+    </nav>
 
-<main>
+  </header>
+
+  <main>
     <section>
-        <div class="container mt-5">
-            <div class="row" style="text-shadow: 0px 0px 3px black;">
-              <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;" class="text-center p-2 border-3 rounded">Resumo</h2><hr>
-              <div class="col-12">
-                <select class="form-select w-25 ms-auto rounded-pill m-3" aria-label="Default select example">
-                  <option selected value="1">Diário</option>
-                  <option value="2">Semanal</option>
-                  <option value="3">Mensal</option>
-                  <option value="3">Anual</option>
-                </select>
-              </div>
-              <div class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
-                <div>Vendas<br />1898</div>
-              </div>
-              <div class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
-                <div>Saídas de estoque<br />1898</div>
-              </div>
-              <div class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
-                <div>Entradas de estoque<br />1898</div>
-              </div>
-              <div class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
-                <div>Faturamento<br />R$1898</div>
-              </div>
-              
-            </div>
+      <div class="container mt-5">
+        <div class="row" style="text-shadow: 0px 0px 3px black;">
+          <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;"
+            class="text-center p-2 border-3 rounded">Resumo</h2>
+          <hr>
+          <div class="col-12">
+            <select id="period" class="form-select w-25 ms-auto rounded-pill m-3" aria-label="Default select example">
+              <option selected value="day">Diário</option>
+              <option value="week">Semanal</option>
+              <option value="month">Mensal</option>
+              <option value="year">Anual</option>
+            </select>
+          </div>
+          <div
+            class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
+            <div>Vendas<br /><span id="sales"></span></div>
+          </div>
 
-            <div  class="row mt-5" style="text-shadow: 0px 0px 3px black;">
-              <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;" class="text-center p-2 border-3 rounded">Estoque</h2><hr>
-              <div class="col-lg border border-dark rounded text-light bg-primary p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
-                <div>Total (Únicos)<br />1898</div>
+          <div
+            class="col-lg border border-dark rounded text-light bg-dark p-1 m-lg-3 my-1 d-flex justify-content-center align-items-center text-center">
+            <div>Faturamento<br />R$ <span id="invoicing"></span></div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5" style="text-shadow: 0px 0px 3px black;">
+          <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;"
+            class="text-center p-2 border-3 rounded">Estoque</h2>
+          <hr>
+          <div
+            class="col-lg border border-dark rounded text-light bg-primary p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
+            <div>Total (Únicos)<br /><span id="unique"></span></div>
+          </div>
+          <div type="button"
+            class="col-lg border border-dark rounded text-light bg-secondary p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
+            <div>Total (Unidades)<br /><span id="totalProducts"></span></div>
+          </div>
+          <div
+            class="col-lg border border-dark rounded text-light bg-warning p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
+            <div>Estoque mínimo<br /><span id="minstock"></span></div>
+          </div>
+          <div
+            class="col-lg border border-dark rounded text-light bg-success p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
+            <div>Total em R$<br /><span id="totalMerch"></span></div>
+          </div>
+
+        </div>
+        <div class="row mt-5" style="text-shadow: 0px 0px 3px black;">
+          <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;"
+            class="text-center p-2 border-3 rounded">Produtos</h2>
+          <hr>
+          <div id="bestSeller"
+            class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex flex-column  justify-content-between align-items-center text-center">
+            <h3>Mais vendido<br /></h3>
+              <div style="font-size:17px">
+                <img height="400px" class="rounded my-2 w-100 object-fit-cover" src="https://picsum.photos/1280/720" alt="">
+                <div class="border-top py-2 border-light">Nome: <span class="productName">Caneta azul (ID:6988)</span></div>
+                <div class="border-top py-2 border-light">Preço: R$ <span class="productPrice">...</span></div>
+                <div class="border-top py-2 border-light">Produtos vendidos: <span class="soldProducts">50</span></div>
+                <div class="border-top py-2 border-light">Em estoque: <span class="productStock">50</span></div>
+                <div class="border-top py-2 border-light">Faturamento:R$ <span class="productInvoicing">5450.50</span></div>
               </div>
-              <div type="button" class="col-lg border border-dark rounded text-light bg-secondary p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
-                <div>Total (Unidades)<br />1898</div>
+            
+          </div>
+          <div type="button" id="bestProfit"
+            class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex flex-column  justify-content-between align-items-center text-center">
+            <h3>Mais lucrativo<br /> </h3>
+              <div style="font-size:17px">
+                <img height="400px" class="rounded my-2 w-100  object-fit-cover" src="https://picsum.photos/1280/720" alt="">
+                <div class="border-top py-2 border-light">Nome: <span class="productName">Caneta azul (ID:6988)</span></div>
+                <div class="border-top py-2 border-light">Preço: R$ <span class="productPrice">...</span></div>
+                <div class="border-top py-2 border-light">Produtos vendidos: <span class="soldProducts">50</span></div>
+                <div class="border-top py-2 border-light">Em estoque: <span class="productStock" >50</span></div>
+                <div class="border-top py-2 border-light">Faturamento:R$ <span class="productInvoicing">5450.50</span></div>
               </div>
-              <div class="col-lg border border-dark rounded text-light bg-warning p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
-                <div>Estoque mínimo<br />1898</div>
-              </div>
-              <div class="col-lg border border-dark rounded text-light bg-success p-1 m-lg-3 my-2 d-flex justify-content-center align-items-center text-center">
-                <div>Total em R$<br />1898</div>
-              </div>
-              
-            </div>
-            <div class="row mt-5" style="text-shadow: 0px 0px 3px black;">
-              <h2 style="text-shadow: none; text-transform:uppercase; font-weight:800;" class="text-center p-2 border-3 rounded">Produtos</h2><hr>
-              <div class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex justify-content-center align-items-center text-center">
-                <h3>Mais vendido<br />
-                  <div style="font-size:17px">
-                    <img class="rounded my-2 w-100 object-fit-cover" src="https://picsum.photos/1280/720" alt="">
-                    <div class="border-top py-2 border-light">Nome: <span>Caneta azul (ID:6988)</span></div>
-                    <div class="border-top py-2 border-light">Produtos vendidos: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Em estoque: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Faturamento:R$ <span>5450.50</span></div>
-                    <div class="border-top py-2 border-light">Lucro:R$ <span>5450.50</span></div>
-                  </div>
-                </h3>
-              </div>
-              <div type="button" class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex justify-content-center align-items-center text-center">
-                <h3>Mais lucrativo<br />
-                  <div style="font-size:17px">
-                    <img class="rounded my-2 w-100 object-fit-cover" src="https://picsum.photos/1280/720" alt="">
-                    <div class="border-top py-2 border-light">Nome: <span>Caneta azul (ID:6988)</span></div>
-                    <div class="border-top py-2 border-light">Produtos vendidos: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Em estoque: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Faturamento:R$ <span>5450.50</span></div>
-                    <div class="border-top py-2 border-light">Lucro:R$ <span>5450.50</span></div>
-                  </div>
-                </h3>
-              </div>
-              <div type="button" class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex justify-content-center align-items-center text-center">
-                <h3>Mais Estoque<br />
-                  <div style="font-size:17px">
-                    <img class="rounded my-2 w-100 object-fit-cover" src="https://picsum.photos/1280/720" alt="">
-                    <div class="border-top py-2 border-light">Nome: <span>Caneta azul (ID:6988)</span></div>
-                    <div class="border-top py-2 border-light">Produtos vendidos: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Em estoque: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Faturamento:R$ <span>5450.50</span></div>
-                    <div class="border-top py-2 border-light">Lucro:R$ <span>5450.50</span></div>
-                  </div>
-                </h3>
-              </div>
-              <div type="button" class="col border border-dark rounded text-light bg-dark p-1 m-3 d-flex justify-content-center align-items-center text-center">
-                <h3>Menos Estoque<br />
-                  <div style="font-size:17px">
-                    <img class="rounded my-2 w-100 object-fit-cover" src="https://picsum.photos/1280/720" alt="">
-                    <div class="border-top py-2 border-light">Nome: <span>Caneta azul (ID:6988)</span></div>
-                    <div class="border-top py-2 border-light">Produtos vendidos: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Em estoque: <span>50</span></div>
-                    <div class="border-top py-2 border-light">Faturamento:R$ <span>5450.50</span></div>
-                    <div class="border-top py-2 border-light">Lucro:R$ <span>5450.50</span></div>
-                  </div>
-                </h3>
-              </div>
-              
-            </div>
-           
-          
            
           </div>
+
+        </div>
+
+      </div>
+
+
+
+      </div>
     </section>
-</main>
+  </main>
 
 
 
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<script src="./assets/javascript/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="./assets/javascript/generalFunctions.js"></script>
+  <script src="./assets/javascript/db.js"></script>
 </body>
+
 </html>

@@ -31,7 +31,7 @@
                           <a class="nav-link" href="./historic.html">Histórico</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./sales.html">Vendas</a>
+                          <a class="nav-link active" href="./sales.html">Vendas</a>
                         </li>
             
                         <li class="nav-item dropdown">
@@ -53,17 +53,18 @@
                           </ul>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuários</a>
+                          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuários</a>
                           <ul class="dropdown-menu">
             
-                            <li><a class="dropdown-item active" href="./users.html">Todos os Usuários</a></li>
+                            <li><a class="dropdown-item" href="./users.html">Todos os Usuários</a></li>
                             <li><a class="dropdown-item" href="./signup.html">Adicionar</a></li>
                           </ul>
                         </li>
             
                       </ul>
                     <form id="search" class="d-flex" role="search">
-                        <input data-typeSearch="users" autocomplete="off" name="search" class="form-control shadow-none me-2" type="search" placeholder="Usuário"
+                        <input  autocomplete="off" name="search"
+                            class="form-control shadow-none me-2" type="search" placeholder="produto"
                             aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Procurar</button>
                     </form>
@@ -80,56 +81,29 @@
 
     </header>
     <main>
-        <!-- modaluser -->
-        <div class="d-none">
-            <li class="list-group-item modaluser  d-none list-group-item-secondary mt-2 shadow">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-1 col d-flex justify-content-center align-items-center mt-lg-0 mt-1">
-                        <label class="mx-1" for="#id">Id:</label>
-                        <div id="id" class="id h-100 bg-light px-3">
-                            1589
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col d-flex justify-content-center align-items-center mt-lg-0 mt-1">
-                        <label class="mx-1" for="#name">nome:</label>
-                        <input disabled type="text" id="name" class="form-control"
-                            placeholder="Recipient's username" aria-label="Recipient's username"
-                            aria-describedby="button-addon2">
-                    </div>
-                    <div class="col-lg-3 col d-flex justify-content-center align-items-center mt-lg-0 mt-1">
-                        <label class="mx-1" for="#email">email:</label>
-                        <input disabled type="text" id="email" class="form-control"
-                            placeholder="Recipient's username" aria-label="Recipient's username"
-                            aria-describedby="button-addon2">
-                    </div>
-                    <div class="col-lg-3 col d-flex justify-content-center align-items-center mt-lg-0 mt-1">
-                        <select disabled class="form-select" aria-label="Default select example">
-                            <option value="seller">Vendedor</option>
-                            <option value="ADM">Administrador</option>
-                        </select>
-                    </div>
-                    <div class="d-flex col-lg-2 col justify-content-center align-items-center mt-lg-2 mt-1">
-                        <button class="btn btn-outline-primary m-1 edit" type="button"
-                            id="button-addon2">Editar</button>
-                        <button class="btn delete btn-outline-danger m-1" type="button"
-                            id="button-addon2" button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#areyousure">Excluir</button>
-                    </div>
-                </div>
-            </li>
+
+        <!-- modalaction -->
+        <div class="container d-none">
+            
         </div>
         <section>
             <div class="container">
-                <ul id="users" class="list-group">
-                    
-
+                <ul id="sales" class="list-group">
+                   
                 </ul>
+                
+                <nav class="d-flex justify-content-center">
+                    <ul class="pagination pagination my-2 m-auto">
+                    </ul>
+                </nav>
                 <!-- Modal -->
                 <div class="modal fade" id="areyousure" tabindex="-1" aria-labelledby="areyousureLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="areyousureLabel">Você tem certeza que deseja excluir <span class="fw-bold">Samuel</span> ?</h5>
+                                <h5 class="modal-title" id="areyousureLabel">Você tem certeza que deseja excluir <span
+                                        class="fw-bold">Samuel</span> ?</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -137,12 +111,16 @@
                                 Essa ação não pode ser revertida!
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary delete" data-bs-dismiss="modal">Sim, excluir!</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não, cancelar.</button>
+                                <button type="button" class="btn btn-primary delete" data-bs-dismiss="modal">Sim,
+                                    excluir!</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não,
+                                    cancelar.</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+               
 
                 <!-- ALERTS -->
                 <div id="alerts">
@@ -192,7 +170,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="./assets/javascript/generalFunctions.js"></script>
-    <script src="./assets/javascript/users.js"></script>
+    <script src="./assets/javascript/sales.js"></script>
 </body>
 
 </html>
